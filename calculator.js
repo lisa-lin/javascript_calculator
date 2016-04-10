@@ -1,8 +1,8 @@
-var num1 = [],
+var num1 = [],    // using arrays to store each number separately and can combine after user clicks an operator
     num2 = [],
-    operand = null,
-    solved = false,
-    $screen = $("#screen");
+    operand = null,   // stores which operator the user clicks
+    solved = false,   // keeps track if user has already made a calculation
+    $screen = $("#screen"); // this is a cached version of a jQuery object
 
 
 $(".numpad").click(function() {
